@@ -16,7 +16,7 @@ namespace CRUDApplication
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Workers", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Wokers", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -11,14 +11,28 @@ namespace CRUDApplication.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Woker
     {
+        [Required]
         public int ID { get; set; }
+
+        [Required]
+        [DisplayName("First Name")]
         public string FirstName { get; set; }
+
+        [Required]
+        [DisplayName("Last Name")]
         public string LastName { get; set; }
+
+        [Required]
         public string Department { get; set; }
+
         public string Email { get; set; }
+
+        [DisplayName("Phone Number")]
         public string PhoneNumber { get; set; }
     }
 }
